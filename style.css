@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: #35663e;
+    overflow: hidden;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #ed2ff0;
+    left: 15%;
+    top: 20%;
+    filter: blur(150px);
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #cd229a;
+    left: 80%;
+    top: 74%;
+    filter: blur(150px);
+}
+
+.container{
+    width: 25rem;
+    color: #fff;
+    background: #00000080;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #000000;
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid #000000;
+
+}
+
+.container h2{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container form{
+    margin: 30px 0 10px 0;
+}
+
+.container form p{
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+.container form input{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.75rem;
+    padding: 0 15px;
+    background: transparent;
+    color: #fff;
+    border: .5px solid #eceaead6;
+    transition: all 0.3s ease;
+}
+
+.container form input:hover{
+    border: 1px solid #cba51c;
+}
+
+.container form input:focus{
+    padding: 0 14px;
+    border: 1px solid #fe5a5a;
+}
+
+.container form .convert-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.container form .from, .container form .to{
+    width: 100%;
+}
+
+.container .convert-box .select-input{
+    display: flex;
+    width: 100%;
+    border: 1px solid #999;
+    height: 50px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .convert-box .select-input:hover{
+    border: 1px solid #cba51c;
+}
+
+.container .convert-box .select-input img{
+    max-width: 50px;
+}
+
+.container .convert-box .select-input select{
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+    margin: 0 -5px 0 5px;
+    color: #fff;
+}
+
+.container .convert-box .select-input select option{
+    color: #b11e1e;
+}
+
+.container .convert-box .reverse{
+    cursor: pointer;
+    margin-top: 35px;
+    font-size: 25px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+
+.container .convert-box .reverse:hover{
+    color: #cba51c;
+}
+
+.container form .result{
+    font-size: 1.5rem;
+    margin: 20px 0 30px;
+}
+
+.container form button{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: #000000;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.container form button:hover{
+    background: #f40303;
+}
