@@ -1,3 +1,3 @@
-### This is a Currency Cinverter App using HTML, CSS, and JS
+### This is a Currency Converter App using HTML, CSS, and JS
 
 [Click here to see it live]()
